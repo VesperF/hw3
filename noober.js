@@ -22,18 +22,15 @@ function pageLoad() {
   // passenger3PickupAddressLine1, passenger3PickupAddressLine2
   // passenger3DropoffAddressLine1, passenger3DropoffAddressLine2
 
-  // let passenger1 = ride[0]
-  // let passenger2 = ride[1]
-  // let passenger3 = ride[2]
 
-  levelOfService = 'Tacos'
-
-   
-  // if (==) {
-  //   levelOfService = 
-  // } else if (==) {
-  //   levelOfService = 
-  // } else {levelOfService = }
+  if (ride.length > 1) {
+    levelOfService = 'Noober Pool'
+  } else if (ride[0].numberOfPassengers > 3) {
+    levelOfService = 'Noober XL'
+  } else if (ride[0].purpleRequested = 'true') {
+    levelOfService = 'Noober Purple'
+  } else 'Noober X'
+  
 
   // Passenger1 info
   passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
